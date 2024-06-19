@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    background: linear-gradient(135deg, #50b3a2, #e8491d);
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    background-color: #fff;
+}
+
+header h1 {
+    margin: 0 0 10px 150px;
+    font-size: 2em;
+}
+
+header p {
+    margin: 0 0 0 150px;
+    font-size: 1em;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #e8491d;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.projects ul li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.projects ul li a {
+    color: #50b3a2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projects ul li a:hover {
+    text-decoration: underline;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background: #50b3a2;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #d73712;
+}
+
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    header h1, header p {
+        margin: 10px 0 0 0;
+        font-size: 1.5em;
+    }
+
+    .profile-pic {
+        position: static;
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+    .skills ul {
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
